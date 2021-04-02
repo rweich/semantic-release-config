@@ -1,0 +1,47 @@
+{
+  "name": "@rweich/semantic-release-config",
+  "version": "0.0.0-development",
+  "description": "semantic-release config for my projects",
+  "author": "rweich",
+  "license": "MIT",
+  "main": ".releaserc.json",
+  "scripts": {
+    "test-release": "semantic-release --dry-run --debug --branches main"
+  },
+  "peerDependencies": {
+    "semantic-release": "^17.4.2"
+  },
+  "dependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "husky": "^6.0.0",
+    "semantic-release": "^17.4.2"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rweich/semantic-release-config.git"
+  },
+  "files": [
+    "README.md",
+    ".releaserc.json"
+  ],
+  "keywords": [
+    "semantic-release",
+    "semantic-release-config"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
