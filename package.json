@@ -6,6 +6,7 @@
   "license": "MIT",
   "main": ".releaserc.json",
   "scripts": {
+    "prepare": "husky install",
     "test-release": "semantic-release --dry-run --debug --branches main"
   },
   "peerDependencies": {
@@ -13,7 +14,8 @@
   },
   "dependencies": {
     "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/git": "^9.0.0"
+    "@semantic-release/git": "^9.0.0",
+    "conventional-changelog-conventionalcommits": "^4.6.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",

@@ -1,6 +1,6 @@
 # semantic-release-config
 
-default config for my ts-projects
+Default config for my ts-projects. foo more
 
 ## Installation
 
