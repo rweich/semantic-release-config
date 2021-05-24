@@ -1,4 +1,6 @@
 # semantic-release-config
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frweich%2Fsemantic-release-config.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Frweich%2Fsemantic-release-config?ref=badge_shield)
+
 
 Default config for my ts-projects. foo more
 
@@ -38,3 +40,7 @@ Default config for my ts-projects. foo more
    ```shell
    yarn semantic-release --dry-run
    ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frweich%2Fsemantic-release-config.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Frweich%2Fsemantic-release-config?ref=badge_large)
