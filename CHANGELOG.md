@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.4](https://github.com/rweich/semantic-release-config/compare/v1.1.3...v1.1.4) (2021-09-01)
+
+
+### Miscellaneous Chores
+
+* update dependencies ([#6](https://github.com/rweich/semantic-release-config/issues/6)) ([ec96b80](https://github.com/rweich/semantic-release-config/commit/ec96b802b1ad7c1bafaf8539a2b91db895fccc18))
+
 ### [1.1.3](https://github.com/rweich/semantic-release-config/compare/v1.1.2...v1.1.3) (2021-08-05)
 
 
