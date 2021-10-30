@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/rweich/semantic-release-config/compare/v1.1.5...v2.0.0) (2021-10-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* the minimum required version of node is now v14.17
+
+### Miscellaneous Chores
+
+* update dependencies ([#7](https://github.com/rweich/semantic-release-config/issues/7)) ([e504cb3](https://github.com/rweich/semantic-release-config/commit/e504cb3c04c28de679ca35687db3986912681ea6))
+
 ### [1.1.5](https://github.com/rweich/semantic-release-config/compare/v1.1.4...v1.1.5) (2021-09-15)
 
 
