@@ -13,6 +13,9 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
+      - name: Get branch name
+        id: branch-name
+        uses: tj-actions/branch-names@v5
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
@@ -23,4 +26,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-        run: yarn semantic-release --dry-run --branches main
+        run: yarn semantic-release --dry-run --branches ${{ steps.branch-name.outputs.current_branch }}
