@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.1](https://github.com/rweich/semantic-release-config/compare/v2.0.0...v2.0.1) (2022-01-18)
+
+
+### Miscellaneous Chores
+
+* update deps (major) ([e4880ac](https://github.com/rweich/semantic-release-config/commit/e4880ac550acde17f1b4683c1fe5ad88ff6cc933))
+
 ## [2.0.0](https://github.com/rweich/semantic-release-config/compare/v1.1.5...v2.0.0) (2021-10-30)
 
 
