@@ -10,7 +10,7 @@
     "test-release": "semantic-release --dry-run --debug --branches main"
   },
   "peerDependencies": {
-    "semantic-release": "^18.0.0"
+    "semantic-release": "^19.0.2"
   },
   "dependencies": {
     "@semantic-release/changelog": "^6.0.1",
