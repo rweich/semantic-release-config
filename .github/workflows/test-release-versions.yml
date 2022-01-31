@@ -1,7 +1,6 @@
 name: Test Release Node-Versions
 
-on: [ push, pull_request ]
-
+on: [ push ]
 jobs:
   build:
 
