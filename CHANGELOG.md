@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.3](https://github.com/rweich/semantic-release-config/compare/v2.0.2...v2.0.3) (2022-03-30)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump minimist from 1.2.5 to 1.2.6 ([52c939b](https://github.com/rweich/semantic-release-config/commit/52c939bb324e162752744e5552f2f60ee5090926))
+
 ### [2.0.2](https://github.com/rweich/semantic-release-config/compare/v2.0.1...v2.0.2) (2022-01-31)
 
 
