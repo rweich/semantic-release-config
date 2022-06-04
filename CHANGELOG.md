@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.4](https://github.com/rweich/semantic-release-config/compare/v2.0.3...v2.0.4) (2022-06-04)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump npm from 8.3.1 to 8.12.0 ([3e08120](https://github.com/rweich/semantic-release-config/commit/3e081206aef7203f0cf84e991ab96f92f30d33c2))
+* **deps:** bump semver-regex from 3.1.3 to 3.1.4 ([8382d91](https://github.com/rweich/semantic-release-config/commit/8382d9127460bb302479a90ed0ad9183534087b8))
+
 ### [2.0.3](https://github.com/rweich/semantic-release-config/compare/v2.0.2...v2.0.3) (2022-03-30)
 
 
