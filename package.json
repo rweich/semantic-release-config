@@ -1,6 +1,6 @@
 {
   "name": "@rweich/semantic-release-config",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "semantic-release config for my projects",
   "author": "rweich",
   "license": "MIT",
