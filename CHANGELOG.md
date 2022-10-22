@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.6](https://github.com/rweich/semantic-release-config/compare/v2.0.5...v2.0.6) (2022-10-22)
+
+
+### Bug Fixes
+
+* make git hook executable ([2a36c2d](https://github.com/rweich/semantic-release-config/commit/2a36c2dab0681e4d347f04dd51e823e6b8dfcde3))
+* set conventionalcommits as preset for the commit-analyzer ([46656dc](https://github.com/rweich/semantic-release-config/commit/46656dc2cdda6afac711500c8152f9fb02f80aa4))
+
+
+### Miscellaneous Chores
+
+* update dependencies ([351d554](https://github.com/rweich/semantic-release-config/commit/351d5542613268254358a31604c4b5ec562926f1))
+
 ### [2.0.5](https://github.com/rweich/semantic-release-config/compare/v2.0.4...v2.0.5) (2022-06-10)
 
 
