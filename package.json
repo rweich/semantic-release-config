@@ -15,13 +15,13 @@
   "dependencies": {
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
-    "conventional-changelog-conventionalcommits": "^4.6.0"
+    "conventional-changelog-conventionalcommits": "^5.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.2",
-    "@commitlint/config-conventional": "^16.0.0",
-    "husky": "^7.0.4",
-    "semantic-release": "^19.0.2"
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "husky": "^8.0.1",
+    "semantic-release": "^19.0.5"
   },
   "engines": {
     "node": ">=14.17"
