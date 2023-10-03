@@ -24,7 +24,7 @@
     "semantic-release": "^19.0.5"
   },
   "engines": {
-    "node": ">=14.17"
+    "node": ">=18.17"
   },
   "repository": "rweich/semantic-release-config",
   "files": [
