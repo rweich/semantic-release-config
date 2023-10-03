@@ -1,26 +1,51 @@
-name: Test Release Node-Versions
+name: Test-Build-Release-Versions
 
-on: [ push ]
+on:
+  push:
+    branches-ignore: [dependabot/**]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
 jobs:
-  build:
+  release:
+    name: test-build-release-versions
 
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [ 14.x, 16.x, 17.x ]
+        node-version: [ 18.x, 20.x ]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
+      - uses: step-security/harden-runner@1b05615854632b887b69ae1be8cbefe72d3ae423 # 2.6.0
+        with:
+          disable-sudo: true
+          egress-policy: block
+          allowed-endpoints: >
+            api.github.com:443
+            github.com:443
+            objects.githubusercontent.com:443
+            registry.npmjs.org:443
+            registry.yarnpkg.com:443
+
       - name: Get branch name
+        uses: tj-actions/branch-names@2e5354c6733793113f416314375826df030ada23 # 6.5
         id: branch-name
-        uses: tj-actions/branch-names@v5
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+
+      - name: Checkout
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # 4.1.0
+
+      - name: Install Node
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # 3.8.1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn install
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
       - name: Release Test
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
