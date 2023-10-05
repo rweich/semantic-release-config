@@ -12,6 +12,28 @@ All notable changes to this project will be documented in this file. See
 * setting the minimum required node version to v18.17 to
 be in line with semantic-release
 
+### Bug Fixes
+
+* release workflow ([14a7d77](https://github.com/rweich/semantic-release-config/commit/14a7d77da53672bdd329b56254f85791edf98e84))
+
+
+### Miscellaneous Chores
+
+* **deps:** bump http-cache-semantics from 4.1.0 to 4.1.1 ([c7bb3e4](https://github.com/rweich/semantic-release-config/commit/c7bb3e435018c543cd5b5ad6a00f25cdeff5760b))
+* **deps:** bump semver from 5.7.1 to 5.7.2 ([ae4b08e](https://github.com/rweich/semantic-release-config/commit/ae4b08ef61ed8f544fea3f667609d37c48ff9dec))
+* **release:** 3.0.0 [skip ci] ([9bde418](https://github.com/rweich/semantic-release-config/commit/9bde418f6db412b49faba92f46629de81d355d57))
+* update deps including semantic-release to v22.0.5 ([e02125c](https://github.com/rweich/semantic-release-config/commit/e02125c509d316cfd004d2d577c16a823868f88e))
+* update supported node version to >=18.17 ([19bf909](https://github.com/rweich/semantic-release-config/commit/19bf909ac1c55617e5105aa3e3b3cb4c8748922a))
+
+## [3.0.0](https://github.com/rweich/semantic-release-config/compare/v2.0.6...v3.0.0) (2023-10-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* requires now semantic-release >= 22.0.5
+* setting the minimum required node version to v18.17 to
+be in line with semantic-release
+
 ### Miscellaneous Chores
 
 * **deps:** bump http-cache-semantics from 4.1.0 to 4.1.1 ([c7bb3e4](https://github.com/rweich/semantic-release-config/commit/c7bb3e435018c543cd5b5ad6a00f25cdeff5760b))
