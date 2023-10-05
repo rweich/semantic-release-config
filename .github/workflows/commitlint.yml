@@ -1,0 +1,31 @@
+name: Lint Commit Messages
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+jobs:
+  commitlint:
+    if: github.actor != 'dependabot[bot]'
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: step-security/harden-runner@1b05615854632b887b69ae1be8cbefe72d3ae423 # 2.6.0
+        with:
+          disable-sudo: true
+          egress-policy: block
+          allowed-endpoints: >
+            api.github.com:443
+            github.com:443
+      - name: Checkout
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # 4.1.0
+        with:
+          fetch-depth: 0
+
+      - name: Lint
+        uses: wagoid/commitlint-github-action@6319f54d83768b60acd6fd60e61007ccc583e62f # 5.4.3
+        with:
+          configFile: package.json
+          failOnWarnings: true
