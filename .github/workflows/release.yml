@@ -28,6 +28,14 @@ jobs:
           persist-credentials: false
           token: ${{ secrets.SEMANTIC_RELEASE_PAT }}
 
+      - name: Install Node
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # 3.8.1
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@61680d0e9b02ff86f5648ade99e01be17f0260a4 # 4.0.0
         id: semantic
